@@ -1,4 +1,4 @@
-local lspconfig = require("lspconfig")
+local lspconfig = require('lspconfig')
 
 local client_capabilities = vim.lsp.protocol.make_client_capabilities()
 client_capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -10,8 +10,8 @@ lspconfig.eslint.setup {}
 -- lspconfig.graphql.setup {}
 
 --[[ lspconfig.volar.setup {
---  filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'},
--- } ]]
+  filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'},
+} ]]
 
 lspconfig.cssls.setup {
   capabilities = client_capabilities

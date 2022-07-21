@@ -1,6 +1,7 @@
--- vim.cmd[[
--- let g:gruvbox_bold = 0
--- ]]
+--vim.cmd[[
+--let g:gruvbox_bold = 0
+--]]
+
 vim.cmd('colorscheme nord')
 
 -- for nord theme

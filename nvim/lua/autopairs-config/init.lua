@@ -1,4 +1,4 @@
-local Rule = require('nvim-autopairs.rule')
+-- local Rule = require('nvim-autopairs.rule')
 local npairs = require('nvim-autopairs')
 npairs.setup({ check_ts = true })
 -- npairs.add_rule(Rule("<", ">"))
