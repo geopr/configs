@@ -7,11 +7,11 @@ return require('packer').startup(function(use)
     event = "BufWinEnter",
     config = "require('treesitter-config')"
   }
-  use {
+  --[[ use {
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true},
     config = "require('lualine-config')"
-  }
+  } ]]
   --[[ use {
     'akinsho/bufferline.nvim',
     requires = 'kyazdani42/nvim-web-devicons',
