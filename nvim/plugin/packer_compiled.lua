@@ -100,6 +100,12 @@ _G.packer_plugins = {
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
   },
+  ["lualine.nvim"] = {
+    config = { "require('lualine-config')" },
+    loaded = true,
+    path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/hoob3rt/lualine.nvim"
+  },
   ["nord-vim"] = {
     loaded = true,
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/nord-vim",
@@ -210,6 +216,10 @@ time([[Config for nvim-lspconfig]], false)
 time([[Config for kommentary]], true)
 require('kommentary.config').use_extended_mappings()
 time([[Config for kommentary]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+require('lualine-config')
+time([[Config for lualine.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-cmp ]]
