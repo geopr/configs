@@ -7,8 +7,11 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(client_capabili
 
 lspconfig.eslint.setup {}
 
+lspconfig.rust_analyzer.setup {}
+
 -- lspconfig.graphql.setup {}
 
+-- vuejs
 --[[ lspconfig.volar.setup {
   filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'},
 } ]]
