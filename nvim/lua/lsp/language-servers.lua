@@ -16,6 +16,8 @@ lspconfig.rust_analyzer.setup {}
   filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'},
 } ]]
 
+lspconfig.volar.setup {}
+
 lspconfig.cssls.setup {
   capabilities = client_capabilities
 } 

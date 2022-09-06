@@ -12,13 +12,6 @@ return require('packer').startup(function(use)
     requires = {'kyazdani42/nvim-web-devicons', opt = true},
     config = "require('lualine-config')"
   }
-  --[[ use {
-    'akinsho/bufferline.nvim',
-    requires = 'kyazdani42/nvim-web-devicons',
-    event = "BufWinEnter",
-    config = "require('bufferline-config')",
-    branch = "main",
-  } ]]
   use {
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons',
