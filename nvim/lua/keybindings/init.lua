@@ -12,3 +12,6 @@ map('i', 'kj', '<ESC>', {noremap = true, silent = false})
  
 map('v', '<', '<gv', {noremap = true, silent = false})
 map('v', '>', '>gv', {noremap = true, silent = false})
+
+-- prevents copying selection after pasting
+map('v', 'p', "\"_dP", {noremap = true, silent = false})
