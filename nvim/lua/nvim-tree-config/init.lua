@@ -3,6 +3,5 @@ require'nvim-tree'.setup {
   hijack_cursor = true,
   view = {
     width = 40,
-    height = 40,
   },
 }
