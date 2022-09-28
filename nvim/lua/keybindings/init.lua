@@ -1,17 +1,18 @@
 vim.g.mapleader = ' '
 
 local map = vim.api.nvim_set_keymap
+local options = { noremap = true, silent = false }
 
-map('n', '<C-h>', '<C-w>h', {noremap = true, silent = false})
-map('n', '<C-l>', '<C-w>l', {noremap = true, silent = false})
-map('n', '<C-j>', '<C-w>j', {noremap = true, silent = false})
-map('n', '<C-k>', '<C-w>k', {noremap = true, silent = false})
+map('n', '<C-h>', '<C-w>h', options)
+map('n', '<C-l>', '<C-w>l', options)
+map('n', '<C-j>', '<C-w>j', options)
+map('n', '<C-k>', '<C-w>k', options)
 
-map('i', 'jk', '<ESC>', {noremap = true, silent = false})
-map('i', 'kj', '<ESC>', {noremap = true, silent = false})
- 
-map('v', '<', '<gv', {noremap = true, silent = false})
-map('v', '>', '>gv', {noremap = true, silent = false})
+map('i', 'jk', '<ESC>', options)
+map('i', 'kj', '<ESC>', options)
+
+map('v', '<', '<gv', options)
+map('v', '>', '>gv', options)
 
 -- prevents copying selection after pasting
-map('v', 'p', "\"_dP", {noremap = true, silent = false})
+map('v', 'p', "\"_dP", options)

@@ -1,6 +1,5 @@
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'arcticicestudio/nord-vim'
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ":TSUpdate",
@@ -18,16 +17,16 @@ return require('packer').startup(function(use)
     cmd = "NvimTreeToggle",
     config = "require('nvim-tree-config')"
   }
-  use {
+  --[[ use {
     'windwp/nvim-autopairs',
     config = "require('autopairs-config')", 
     after = "nvim-cmp"
-  }
-  use {
+  } ]]
+  --[[ use {
     'windwp/nvim-ts-autotag',
     event = "InsertEnter", 
     after = "nvim-treesitter",
-  }
+  } ]]
   use {
     'folke/which-key.nvim',
     event = "BufWinEnter",

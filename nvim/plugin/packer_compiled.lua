@@ -111,19 +111,6 @@ _G.packer_plugins = {
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/hoob3rt/lualine.nvim"
   },
-  ["nord-vim"] = {
-    loaded = true,
-    path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/nord-vim",
-    url = "https://github.com/arcticicestudio/nord-vim"
-  },
-  ["nvim-autopairs"] = {
-    config = { "require('autopairs-config')" },
-    load_after = {},
-    loaded = true,
-    needs_bufread = false,
-    path = "/Users/geopr/.local/share/nvim/site/pack/packer/opt/nvim-autopairs",
-    url = "https://github.com/windwp/nvim-autopairs"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -145,23 +132,12 @@ _G.packer_plugins = {
     url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
-    after = { "nvim-ts-autotag" },
     config = { "require('treesitter-config')" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/opt/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-ts-autotag"] = {
-    load_after = {
-      ["nvim-treesitter"] = true
-    },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/Users/geopr/.local/share/nvim/site/pack/packer/opt/nvim-ts-autotag",
-    url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = false,
@@ -218,36 +194,26 @@ time([[Defining packer_plugins]], false)
 time([[Config for nvim-lspconfig]], true)
 require('lsp')
 time([[Config for nvim-lspconfig]], false)
--- Config for: kommentary
-time([[Config for kommentary]], true)
-require('kommentary.config').use_extended_mappings()
-time([[Config for kommentary]], false)
 -- Config for: lualine.nvim
 time([[Config for lualine.nvim]], true)
 require('lualine-config')
 time([[Config for lualine.nvim]], false)
--- Load plugins in order defined by `after`
-time([[Sequenced loading]], true)
-vim.cmd [[ packadd nvim-cmp ]]
-vim.cmd [[ packadd nvim-autopairs ]]
-
--- Config for: nvim-autopairs
-require('autopairs-config')
-
-time([[Sequenced loading]], false)
+-- Config for: kommentary
+time([[Config for kommentary]], true)
+require('kommentary.config').use_extended_mappings()
+time([[Config for kommentary]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeToggle lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Telescope lua require("packer.load")({'telescope.nvim'}, { cmd = "Telescope", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeToggle lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'nvim-ts-autotag'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au BufWinEnter * ++once lua require("packer.load")({'nvim-treesitter', 'which-key.nvim'}, { event = "BufWinEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufWinEnter * ++once lua require("packer.load")({'which-key.nvim', 'nvim-treesitter'}, { event = "BufWinEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 
