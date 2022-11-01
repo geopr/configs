@@ -1,0 +1,71 @@
+" Source your .vimrc
+" source ~/.vimrc
+
+let mapleader = " "
+
+" relative line numbers
+set relativenumber
+set number
+set rnu
+
+" disable blinking
+set guicursor+=n-v-c:blinkon0
+
+" disable mouse
+set mouse=a
+
+" disable "smart" things
+set nosmartindent
+set noautoindent
+
+
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" disable bell sound
+set visualbell
+set noerrorbells
+
+" remaps kj to enter vim
+" inoremap kj <ESC>
+
+" write to file (save) when pressing leader (space) + w
+nnoremap <leader>w :w<CR>
+" close file
+nnoremap <leader>x :exit<CR>
+
+"Don't use Ex mode, use Q for formatting
+map Q gq
+
+" find in files
+map <leader>r <Action>(FindInPath)
+
+" search everywhere
+map <leader>f <Action>(SearchEverywhere)
+
+" show docs (for all languages) such as function's signature
+map <leader>lh <Action>(QuickJavaDoc)
+
+" rename something
+map <leader>lr <Action>(RenameElement)
+
+" find usages
+map <leader>lu <Action>(FindUsages)
+
+" go to declaration
+map <leader>ld <Action>(GotoDeclaration)
+
+" shows diagnostics for current line
+map <leader>le <Action>(ShowErrorDescription)
+
+" shows possible actions/quick fixes for current line
+map <leader>la <Action>(ShowIntentionActions)
+
+" prettier
+map <leader>p <Action>(ReformatCode)
+
+" Find more examples here: https://jb.gg/share-ideavimrc

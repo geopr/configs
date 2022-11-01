@@ -1,9 +1,11 @@
 local lspconfig = require('lspconfig')
 
-local client_capabilities = vim.lsp.protocol.make_client_capabilities()
+--[[ local client_capabilities = vim.lsp.protocol.make_client_capabilities()
 client_capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-local capabilities = require('cmp_nvim_lsp').update_capabilities(client_capabilities)
+local capabilities = require('cmp_nvim_lsp').update_capabilities(client_capabilities) ]]
+
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 lspconfig.eslint.setup {}
 
@@ -22,9 +24,9 @@ lspconfig.cssls.setup {
   capabilities = client_capabilities
 } 
 
-lspconfig.html.setup {
+--[[ lspconfig.html.setup {
   capabilities = client_capabilities
-}
+} ]]
 
 lspconfig.tsserver.setup {
   capabilities = client_capabilities,
