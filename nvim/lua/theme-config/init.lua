@@ -2,7 +2,9 @@
 --let g:gruvbox_bold = 0
 --]]
 
-vim.cmd('colorscheme nord')
+-- vim.cmd('colorscheme gruvbox');
+-- vim.cmd('colorscheme darcula');
+vim.cmd('colorscheme nord');
 
 -- for nord theme
 -- vim.cmd[[

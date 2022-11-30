@@ -1,5 +1,3 @@
-" TODO rewrite to lua 
-
 if exists("g:darcula")
   finish
 endif
@@ -234,7 +232,6 @@ call s:Hi('GitAddStripe', s:p.addStripe, s:p.addStripe)
 call s:Hi('GitChangeStripe', s:p.changeStripe, s:p.changeStripe)
 call s:Hi('GitDeleteStripe', s:p.deleteStripe, s:p.gutter)
 call s:Hi('CodeError', s:p.null, s:p.codeError)
-" call s:Hi('CodeError', s:p.codeError, s:p.null)
 call s:Hi('CodeWarning', s:p.null, s:p.codeWarning)
 call s:Hi('CodeInfo', s:p.null, s:p.infoStripe)
 call s:Hi('CodeHint', s:p.hintFg, s:p.hintBg)
@@ -346,7 +343,6 @@ if has('nvim')
   hi! link TSVariableBuiltin Keyword
 
   " LSP
-
   hi! link LspDiagnosticsDefaultError CodeError
   hi! link LspDiagnosticsDefaultWarning CodeWarning
   hi! link LspDiagnosticsDefaultInformation CodeInfo
@@ -366,12 +362,6 @@ if has('nvim')
   hi! link LspDiagnosticsFloatingWarning NormalFloat
   hi! link LspDiagnosticsFloatingInformation NormalFloat
   hi! link LspDiagnosticsFloatingHint NormalFloat
-
-  hi! link DiagnosticError CodeError
-  hi! link DiagnosticWarn  CodeWarning
-  hi! link DiagnosticInfo  CodeInfo
-  hi! link DiagnosticHint  CodeHint
-
 endif
 
 " Vim terminal colors (for :terminal)

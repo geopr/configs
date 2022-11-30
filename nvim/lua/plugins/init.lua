@@ -7,6 +7,11 @@ return require('packer').startup(function(use)
     config = "require('treesitter-config')"
   }
   use {
+    'akinsho/bufferline.nvim',
+    config = "require('bufferline-config')",
+    requires = 'nvim-tree/nvim-web-devicons',
+  }
+  use {
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true},
     config = "require('lualine-config')"
@@ -17,6 +22,7 @@ return require('packer').startup(function(use)
     cmd = "NvimTreeToggle",
     config = "require('nvim-tree-config')"
   }
+  use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
   --[[ use {
     'windwp/nvim-autopairs',
     config = "require('autopairs-config')", 
