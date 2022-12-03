@@ -6,6 +6,7 @@ return require('packer').startup(function(use)
     event = "BufWinEnter",
     config = "require('treesitter-config')"
   }
+  use { "catppuccin/nvim", as = "catppuccin" }
   use {
     'akinsho/bufferline.nvim',
     config = "require('bufferline-config')",
@@ -22,7 +23,6 @@ return require('packer').startup(function(use)
     cmd = "NvimTreeToggle",
     config = "require('nvim-tree-config')"
   }
-  use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
   --[[ use {
     'windwp/nvim-autopairs',
     config = "require('autopairs-config')", 
