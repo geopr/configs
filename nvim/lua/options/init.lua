@@ -36,4 +36,4 @@ vim.bo.autoindent = true
 vim.o.expandtab = true
 vim.bo.expandtab = true
 vim.o.lazyredraw = true
-
+vim.o.spelllang = "en_us"

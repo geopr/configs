@@ -18,10 +18,8 @@ wk.setup {
 
 local mappings = {
   q = {":q<cr>", "Quit"},
-  Q = {":wq<cr>", "Save & Quit"},
   w = {":wa<cr>", "Save all"},
   x = {":bdelete<cr>", "Close"},
-  E = {":e ~/.config/nvim/init.lua<cr>", "Edit config"},
   f = {":Telescope find_files<cr>", "Telescope Find Files"},
   r = {":Telescope live_grep<cr>", "Telescope Live Grep"},
   l = {
