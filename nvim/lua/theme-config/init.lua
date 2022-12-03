@@ -2,16 +2,14 @@
 --let g:gruvbox_bold = 0
 --]]
 
--- vim.cmd('colorscheme nord');
+vim.cmd('colorscheme nord');
 
-require("catppuccin").setup({
+--[[ require("catppuccin").setup({
     flavour = "frappe", -- latte, frappe, macchiato, mocha
     term_colors = true,
     no_italic = true,
     no_bold = true,
-})
-
-vim.cmd('colorscheme catppuccin');
+}) ]]
 
 -- for nord theme
 -- vim.cmd[[
