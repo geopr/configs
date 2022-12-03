@@ -16,3 +16,10 @@ map('v', '>', '>gv', options)
 
 -- prevents copying selection after pasting
 map('v', 'p', "\"_dP", options)
+
+map('n', '<C-d>', '<C-d>zz', options)
+map('n', '<C-u>', '<C-u>zz', options)
+
+map('n', 'n', 'nzzzv', options)
+map('n', 'N', 'Nzzzv', options)
+
