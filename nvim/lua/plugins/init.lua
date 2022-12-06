@@ -6,6 +6,12 @@ return require('packer').startup(function(use)
     event = "BufWinEnter",
     config = "require('treesitter-config')"
   }
+  use 'gpanders/editorconfig.nvim'
+  use {
+    "kylechui/nvim-surround",
+    tag = "*",
+    config = "require('nvim-surround-config')",
+  }
   use {
     'akinsho/bufferline.nvim',
     config = "require('bufferline-config')",
@@ -22,16 +28,6 @@ return require('packer').startup(function(use)
     cmd = "NvimTreeToggle",
     config = "require('nvim-tree-config')"
   }
-  --[[ use {
-    'windwp/nvim-autopairs',
-    config = "require('autopairs-config')", 
-    after = "nvim-cmp"
-  } ]]
-  --[[ use {
-    'windwp/nvim-ts-autotag',
-    event = "InsertEnter", 
-    after = "nvim-treesitter",
-  } ]]
   use {
     'folke/which-key.nvim',
     event = "BufWinEnter",
@@ -57,5 +53,16 @@ return require('packer').startup(function(use)
 		"b3nj5m1n/kommentary",
     config = "require('kommentary.config').use_extended_mappings()"
 	}
+  --[[ use {
+    'windwp/nvim-autopairs',
+    config = "require('autopairs-config')", 
+    after = "nvim-cmp"
+  } ]]
+  --[[ use {
+    'windwp/nvim-ts-autotag',
+    event = "InsertEnter", 
+    after = "nvim-treesitter",
+  } ]]
+
 end)
 
