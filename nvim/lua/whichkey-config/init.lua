@@ -62,6 +62,10 @@ local mappings = {
     x = {":close<cr>", "Close splitted window"},
   },
   b = {':Telescope buffers<cr>', 'Show current buffers'},
+  d = {
+    name = 'docs',
+    g = {':DogeGenerate<cr>', 'generates docs (like jsdoc)'},
+  },
   --[[ b = {
     name = 'BufferLine',
     n = {":BufferLineMoveNext<cr>", "move current tab to the right"},

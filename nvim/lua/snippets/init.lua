@@ -20,6 +20,8 @@ ls.config = {
   updateevents = "TextChanged,TextChangedI",
 };
 
+-- "" - new line
+
 ls.add_snippets("all", {
   s("cl", {
     t("console.log("),
@@ -27,77 +29,16 @@ ls.add_snippets("all", {
     t(");"),
   }),
 
-  s("if", {
-    t("if ("),
-    i(1),
-    t({ ") {", "\t" }),
-    i(0),
-    t({ "", "}" }),
-  }),
-  
-  s("ifi", {
-    t("if ("),
-    i(1),
-    t(") "),
-    i(0),
-    t({ ";" }),
-  }),
-  
-  s("fn", {
-    t("function "),
-    i(1),
-    t("("),
-    i(2),
-    t("): "),
-    i(3),
-    t({ " {", "\t" }),
-    i(0),
-    t({ "", "}" }),
-  }),
-
-  s("cb", {
-    t("("),
-    i(1),
-    t({ ") => {", "\t" }),
-    i(0),
-    t({ "", "}" })
-  }),
-
-  s("cbi", {
-    t("("),
-    i(1),
-    t(") => "),
-    i(0),
-    t(";"),
-  }),
-
-  s("imp", {
-    t("import { "),
-    i(0),
-    t(" } from '"),
-    i(1),
-    t("';"),
-  }),
-  
-  s("impa", {
-    t("import * as "),
-    i(0),
-    t(" from '"),
-    i(1),
-    t("';"),
-  }),
-
-  s("impd", {
-    t("import "),
-    i(0),
-    t(" from '"),
-    i(1),
-    t("';"),
-  }),
-
   s("ea", {
     t("export * from '"),
     i(0),
     t("';"),
+  }),
+
+  s("jsdoc", {
+    t("/**"),
+    t({ "", " * " }),
+    i(0),
+    t({ "", " */" }),
   }),
 })

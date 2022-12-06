@@ -13,6 +13,10 @@ return require('packer').startup(function(use)
     config = "require('nvim-surround-config')",
   }
   use {
+    'kkoomen/vim-doge',
+    run = ':call doge#install()',
+  }
+  use {
     'akinsho/bufferline.nvim',
     config = "require('bufferline-config')",
     requires = 'nvim-tree/nvim-web-devicons',

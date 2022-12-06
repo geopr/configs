@@ -134,7 +134,7 @@ _G.packer_plugins = {
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-surround"] = {
-    config = { "\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
+    config = { "require('nvim-surround-config')" },
     loaded = true,
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/nvim-surround",
     url = "https://github.com/kylechui/nvim-surround"
@@ -180,6 +180,11 @@ _G.packer_plugins = {
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/opt/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["vim-doge"] = {
+    loaded = true,
+    path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/vim-doge",
+    url = "https://github.com/kkoomen/vim-doge"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -214,6 +219,10 @@ time([[Config for nvim-lspconfig]], false)
 time([[Config for lualine.nvim]], true)
 require('lualine-config')
 time([[Config for lualine.nvim]], false)
+-- Config for: nvim-surround
+time([[Config for nvim-surround]], true)
+require('nvim-surround-config')
+time([[Config for nvim-surround]], false)
 -- Config for: kommentary
 time([[Config for kommentary]], true)
 require('kommentary.config').use_extended_mappings()
@@ -222,10 +231,6 @@ time([[Config for kommentary]], false)
 time([[Config for bufferline.nvim]], true)
 require('bufferline-config')
 time([[Config for bufferline.nvim]], false)
--- Config for: nvim-surround
-time([[Config for nvim-surround]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
-time([[Config for nvim-surround]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
