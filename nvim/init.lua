@@ -4,3 +4,4 @@ require('keybindings');
 require('snippets');
 
 require('theme-config');
+require('helpers');

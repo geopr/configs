@@ -200,6 +200,11 @@ _G.packer_plugins = {
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
   },
+  ["vim-test"] = {
+    loaded = true,
+    path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/vim-test",
+    url = "https://github.com/vim-test/vim-test"
+  },
   ["which-key.nvim"] = {
     config = { "require('whichkey-config')" },
     loaded = false,
@@ -211,14 +216,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require('lsp')
-time([[Config for nvim-lspconfig]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-require('lualine-config')
-time([[Config for lualine.nvim]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 require('nvim-surround-config')
@@ -231,21 +228,29 @@ time([[Config for kommentary]], false)
 time([[Config for bufferline.nvim]], true)
 require('bufferline-config')
 time([[Config for bufferline.nvim]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+require('lsp')
+time([[Config for nvim-lspconfig]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+require('lualine-config')
+time([[Config for lualine.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.api.nvim_create_user_command, 'NvimTreeToggle', function(cmdargs)
-          require('packer.load')({'nvim-tree.lua'}, { cmd = 'NvimTreeToggle', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'nvim-tree.lua'}, { cmd = 'NvimTreeToggle' }, _G.packer_plugins)
-          vim.api.nvim_input('<space><bs><tab>')
-      end})
 pcall(vim.api.nvim_create_user_command, 'Telescope', function(cmdargs)
           require('packer.load')({'telescope.nvim'}, { cmd = 'Telescope', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'telescope.nvim'}, { cmd = 'Telescope' }, _G.packer_plugins)
+          vim.api.nvim_input('<space><bs><tab>')
+      end})
+pcall(vim.api.nvim_create_user_command, 'NvimTreeToggle', function(cmdargs)
+          require('packer.load')({'nvim-tree.lua'}, { cmd = 'NvimTreeToggle', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'nvim-tree.lua'}, { cmd = 'NvimTreeToggle' }, _G.packer_plugins)
           vim.api.nvim_input('<space><bs><tab>')
       end})
 time([[Defining lazy-load commands]], false)
