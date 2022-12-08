@@ -7,7 +7,6 @@ vim.o.fileencoding = 'utf-8'
 vim.o.cmdheight = 2
 vim.o.splitbelow = true
 vim.o.splitright = true
-vim.opt.termguicolors = true
 vim.o.conceallevel = 0
 -- vim.o.showtabline = 2
 vim.o.showmode = false
@@ -37,3 +36,11 @@ vim.o.expandtab = true
 vim.bo.expandtab = true
 vim.o.lazyredraw = true
 vim.o.spelllang = "en_us"
+vim.opt.termguicolors = true
+vim.opt.list = true
+vim.opt.listchars = {
+  eol = '↴',
+  space = '⋅',
+  tab = '>-',
+}
+
