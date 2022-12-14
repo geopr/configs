@@ -1,4 +1,5 @@
 vim.cmd("filetype plugin indent on")
+vim.opt.background = "dark"
 vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.hidden = true
 vim.o.whichwrap = 'b,s,<,>,[,],h,l'
@@ -8,7 +9,6 @@ vim.o.cmdheight = 2
 vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.conceallevel = 0
--- vim.o.showtabline = 2
 vim.o.showmode = false
 vim.o.backup = false
 vim.o.writebackup = false

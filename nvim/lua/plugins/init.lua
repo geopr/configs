@@ -94,9 +94,9 @@ return require('packer').startup(function(use)
 
   -- commenting/uncommenting lines
   use {
-		"b3nj5m1n/kommentary",
+    "b3nj5m1n/kommentary",
     config = "require('kommentary.config').use_extended_mappings()"
-	}
+  }
   --[[ use {
     'windwp/nvim-autopairs',
     config = "require('autopairs-config')", 
