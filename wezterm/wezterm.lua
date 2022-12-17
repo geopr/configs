@@ -28,7 +28,7 @@ return {
       },
     },
   }, ]]
-  
+
   -- nord 
   colors = {
     tab_bar = {
