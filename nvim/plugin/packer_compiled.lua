@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/editorconfig.nvim",
     url = "https://github.com/gpanders/editorconfig.nvim"
   },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
-  },
   kommentary = {
     loaded = true,
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/kommentary",

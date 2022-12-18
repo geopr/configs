@@ -2,10 +2,10 @@ return require('packer').startup(function(use)
   -- package manager
   use 'wbthomason/packer.nvim'
 
-  use({
+  use {
     'iamcco/markdown-preview.nvim',
     run = function() vim.fn['mkdp#util#install']() end,
-  })
+  }
 
   -- tree settier (syntax highlihting)
   use {
@@ -70,6 +70,7 @@ return require('packer').startup(function(use)
     },
   }
 
+  -- lsp
   use {
     'VonHeikemen/lsp-zero.nvim',
 
@@ -88,7 +89,6 @@ return require('packer').startup(function(use)
 
       -- snippets
       {'L3MON4D3/LuaSnip'},
-      {'rafamadriz/friendly-snippets'},
       {'saadparwaiz1/cmp_luasnip'},
     }
   }
