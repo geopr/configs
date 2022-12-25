@@ -10,7 +10,9 @@ return require('packer').startup(function(use)
   -- tree settier (syntax highlihting)
   use {
     'nvim-treesitter/nvim-treesitter',
-    run = ":TSUpdate",
+    requires = { 
+      {'nvim-lua/plenary.nvim'},
+    },
   }
 
   -- plugin for supporting editorconfig
