@@ -10,7 +10,7 @@ return require('packer').startup(function(use)
   -- tree settier (syntax highlihting)
   use {
     'nvim-treesitter/nvim-treesitter',
-    requires = { 
+    requires = {
       {'nvim-lua/plenary.nvim'},
     },
   }
