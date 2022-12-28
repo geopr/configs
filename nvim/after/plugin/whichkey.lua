@@ -29,13 +29,14 @@ local mappings = {
     k = {"<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature Help"},
     t = {'<cmd>lua vim.lsp.buf.type_definition()<cr>', "Type Definition"},
     d = {'<cmd>lua vim.lsp.buf.definition()<cr>', "Go To Definition"},
-    h = {"<cmd>lua vim.lsp.buf.hover()<cr>", "Hover Commands"},
+    h = {"<cmd>lua vim.lsp.buf.hover()<cr>", "Hover"},
     r = {'<cmd>:Telescope lsp_references<cr>', "References"},
     R = {'<cmd>lua vim.lsp.buf.rename()<cr>', "Rename"},
     a = {'<cmd>lua vim.lsp.buf.code_action()<cr>', "Code Action"},
     e = {'<cmd>lua vim.diagnostic.open_float()<cr>', "Show Line Diagnostics"},
     n = {'<cmd>lua vim.diagnostic.goto_next()<cr>', "Go To Next Diagnostic"},
-    N = {'<cmd>lua vim.diagnostic.goto_prev()<cr>', "Go To Previous Diagnostic"}
+    N = {'<cmd>lua vim.diagnostic.goto_prev()<cr>', "Go To Previous Diagnostic"},
+    l = {'<cmd>lua vim.diagnostic.setqflist()<cr>', 'Show diagnostics at the bottom'}
   },
   g = {
     name = 'Git',
