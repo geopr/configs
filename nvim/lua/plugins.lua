@@ -2,10 +2,10 @@ return require('packer').startup(function(use)
   -- package manager
   use 'wbthomason/packer.nvim'
 
-  use {
+  --[[ use {
     'iamcco/markdown-preview.nvim',
     run = function() vim.fn['mkdp#util#install']() end,
-  }
+  } ]]
 
   -- tree settier (syntax highlihting)
   use {
@@ -28,10 +28,10 @@ return require('packer').startup(function(use)
   }
 
   -- generating documentation for any supported lang
-  use {
+  --[[ use {
     'kkoomen/vim-doge',
     run = ':call doge#install()',
-  }
+  } ]]
 
   -- show opened buffers on top of the current buffer
   use {
@@ -73,7 +73,7 @@ return require('packer').startup(function(use)
   }
 
   -- lsp
-  use {
+  --[[ use {
     'VonHeikemen/lsp-zero.nvim',
 
     requires = {
@@ -93,7 +93,7 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},
       {'saadparwaiz1/cmp_luasnip'},
     }
-  }
+  } ]]
 
   -- git
   use 'tpope/vim-fugitive'
@@ -105,26 +105,24 @@ return require('packer').startup(function(use)
   use 'prettier/vim-prettier'
 
   -- commenting/uncommenting lines
-  use {'b3nj5m1n/kommentary'}
+  use 'b3nj5m1n/kommentary'
 
-  -- legacy
   -- configuring lsp
-  --[[ use {
-    'neovim/nvim-lspconfig',
-    config = "require('lsp')",
-  } ]]
+  use 'neovim/nvim-lspconfig'
 
   -- autocompletion
-  --[[ use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer' ]]
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
 
   -- snippets engine
-  --[[ use 'saadparwaiz1/cmp_luasnip'
-  use 'L3MON4D3/LuaSnip' ]]
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'L3MON4D3/LuaSnip'
 
   -- icons for completion
-  -- use 'onsails/lspkind-nvim'
+  use 'onsails/lspkind-nvim'
 
   --[[ use {
     'windwp/nvim-autopairs',

@@ -1,8 +1,8 @@
---[[ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   underline = true,
   virtual_text = {spacing = 5, severity_limit = 'Warning'},
   update_in_insert = false
-}) ]]
+})
 
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
@@ -13,7 +13,7 @@ require'nvim-treesitter.configs'.setup {
 
   -- Automatically install missing parsers when entering buffer
   -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
-  auto_install = true,
+  auto_install = false,
 
   highlight = {
     -- `false` will disable the whole extension
