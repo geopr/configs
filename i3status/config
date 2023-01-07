@@ -18,6 +18,7 @@ order += "memory"
 order += "cpu_temperature 0"
 order += "cpu_usage"
 order += "tztime local"
+order += "volume master"
 
 disk "/" {
   format = "%free"
@@ -25,10 +26,6 @@ disk "/" {
 
 battery all {
   format = "%status %percentage %remaining"
-}
-
-tztime local {
-  format = "%Y-%m-%d %H:%M"
 }
 
 load {
@@ -46,3 +43,14 @@ cpu_temperature 0 {
 cpu_usage {
   format = "CPU usage: %usage"
 }
+
+tztime local {
+  format = "%Y-%m-%d %H:%M"
+}
+
+volume master {
+  format = "♪: %volume"
+  format_muted = "♪: muted (%volume)"
+  device = "pulse:1"
+}
+
