@@ -2,11 +2,6 @@ return require('packer').startup(function(use)
   -- package manager
   use 'wbthomason/packer.nvim'
 
-  --[[ use {
-    'iamcco/markdown-preview.nvim',
-    run = function() vim.fn['mkdp#util#install']() end,
-  } ]]
-
   -- tree settier (syntax highlihting)
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -15,23 +10,11 @@ return require('packer').startup(function(use)
     },
   }
 
-  -- plugin for supporting editorconfig
-  use 'gpanders/editorconfig.nvim'
-
-  -- universal plugin that can run test in any supported lang/framework
-  use 'vim-test/vim-test'
-
   -- surrounding manipulatoins (replacing quotes, deleting brackets around words)
   use {
     "kylechui/nvim-surround",
     tag = "*",
   }
-
-  -- generating documentation for any supported lang
-  --[[ use {
-    'kkoomen/vim-doge',
-    run = ':call doge#install()',
-  } ]]
 
   -- show opened buffers on top of the current buffer
   use {
@@ -72,29 +55,6 @@ return require('packer').startup(function(use)
     },
   }
 
-  -- lsp
-  --[[ use {
-    'VonHeikemen/lsp-zero.nvim',
-
-    requires = {
-      -- lsp support
-      {'neovim/nvim-lspconfig'},
-      {'williamboman/mason.nvim'},
-      {'williamboman/mason-lspconfig.nvim'},
-
-      -- autocompletion
-      {'hrsh7th/nvim-cmp'},
-      {'hrsh7th/cmp-buffer'},
-      {'hrsh7th/cmp-path'},
-      {'hrsh7th/cmp-nvim-lsp'},
-      {'hrsh7th/cmp-nvim-lua'},
-
-      -- snippets
-      {'L3MON4D3/LuaSnip'},
-      {'saadparwaiz1/cmp_luasnip'},
-    }
-  } ]]
-
   -- git
   use 'tpope/vim-fugitive'
 
@@ -123,17 +83,5 @@ return require('packer').startup(function(use)
 
   -- icons for completion
   use 'onsails/lspkind-nvim'
-
-  --[[ use {
-    'windwp/nvim-autopairs',
-    config = "require('autopairs-config')", 
-    after = "nvim-cmp"
-  } ]]
-  --[[ use {
-    'windwp/nvim-ts-autotag',
-    event = "InsertEnter", 
-    after = "nvim-treesitter",
-  } ]]
-
 end)
 

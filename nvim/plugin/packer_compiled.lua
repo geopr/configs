@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["editorconfig.nvim"] = {
-    loaded = true,
-    path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/editorconfig.nvim",
-    url = "https://github.com/gpanders/editorconfig.nvim"
-  },
   kommentary = {
     loaded = true,
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/kommentary",
@@ -188,11 +183,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
-  },
-  ["vim-test"] = {
-    loaded = true,
-    path = "/Users/geopr/.local/share/nvim/site/pack/packer/start/vim-test",
-    url = "https://github.com/vim-test/vim-test"
   },
   ["which-key.nvim"] = {
     loaded = true,

@@ -6,6 +6,10 @@ window:
     x: 0
     y: 0
 
+  decorations: none
+
+  startup_mode: Maximized
+
 font:
   normal:
     family: JetBrainsMono Nerd Font
@@ -13,17 +17,17 @@ font:
 
   bold:
     family: JetBrainsMono Nerd Font 
-    style: Bold
+    style: Regular 
 
   italic:
     family: JetBrainsMono Nerd Font 
-    style: Italic
+    style: Regular 
 
   bold_italic:
     family: JetBrainsMono Nerd Font 
-    style: Bold Italic
+    style: Regular 
 
-  size: 12.0
+  size: 15.0
 
   offset:
     x: 0
