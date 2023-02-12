@@ -27,7 +27,7 @@ lspconfig.eslint.setup {
   capabilities = capabilities
 }
 
-lspconfig.sumneko_lua.setup {
+lspconfig.lua_ls.setup {
   capabilities = capabilities,
 
   settings = {
