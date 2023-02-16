@@ -1,9 +1,9 @@
 -- for gruvbox theme
---[[ vim.g.gruvbox_contrast_dark = "medium"
+vim.g.gruvbox_contrast_dark = "medium"
 vim.g.gruvbox_bold = 0
 vim.g.gruvbox_italic = 0
 vim.g.gruvbox_invert_selection = 0
-vim.g.gruvbox_invert_signs = 0 ]]
+vim.g.gruvbox_invert_signs = 0
 
 -- for nord theme
 --vim.cmd[[
@@ -22,4 +22,4 @@ vim.g.gruvbox_invert_signs = 0 ]]
 --hi NonText guibg=NONE ctermbg=NONE
 --]]
 
-vim.cmd('colorscheme nord');
+vim.cmd('colorscheme gruvbox');
