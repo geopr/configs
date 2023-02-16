@@ -10,6 +10,8 @@ return require('packer').startup(function(use)
     },
   }
 
+  use "folke/tokyonight.nvim"
+
   -- surrounding manipulatoins (replacing quotes, deleting brackets around words)
   use {
     "kylechui/nvim-surround",
