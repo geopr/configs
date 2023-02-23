@@ -52,9 +52,9 @@ lspconfig.lua_ls.setup {
   },
 }
 
-lspconfig.clangd.setup {
+--[[ lspconfig.clangd.setup {
   capabilities = capabilities
-}
+} ]]
 
 --[[ lspconfig.rust_analyzer.setup {
   capabilities = capabilities
@@ -69,9 +69,9 @@ lspconfig.clangd.setup {
   capabilities = capabilities
 } ]]
 
-lspconfig.cssls.setup {
+--[[ lspconfig.cssls.setup {
   capabilities = capabilities
-}
+} ]]
 
 --[[ lspconfig.html.setup {
   capabilities = client_capabilities
@@ -80,4 +80,3 @@ lspconfig.cssls.setup {
 lspconfig.tsserver.setup {
   capabilities = capabilities,
 }
-
