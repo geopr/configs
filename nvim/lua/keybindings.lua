@@ -24,4 +24,4 @@ map('n', 'n', 'nzzzv', options)
 map('n', 'N', 'Nzzzv', options)
 
 -- insert two emtpy lines above the cursor and enter insert mode
-map('n', '<C-[>', 'O<ESC>O', options);
+-- map('n', '<C-[>', 'O<ESC>O', options);
