@@ -4,6 +4,7 @@ syntax match Keywords /\v(\) )@<=<(extends)>/
 syntax match Keywords /\v(: |- (var )?)@<=<(putIn)>/
 syntax match Keywords /\v(- (import|include) .+)@<=<as>/
 syntax match Keywords /\v(- (import|include) .+ as )@<=<(interface|placeholder)>/
+syntax match Keywords /\v(- async )@<=<template>/
 
 highlight Modules guifg=#7dcfff
 syntax match Modules /\v(- )@<=<(include|import)>/
