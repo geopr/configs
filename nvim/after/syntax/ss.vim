@@ -29,7 +29,7 @@ syntax match Operator /\v[+,=:;.*/%|\-]/
 
 highlight Comment guifg=#565f89
 syntax match Comment /\v\/\/\/.*/
-syntax match Comment /\v\/\*(.*\n)+.*\*\//
+syntax match Comment /\v\/\*(\_.){-}\*\//
 
 highlight JSGlobalObjects guifg=#2ac3de
 syntax match JSGlobalObjects /\v(String|Number|BigInt|Boolean|Symbol|Array|Object|Function)(\.|\()@=/
