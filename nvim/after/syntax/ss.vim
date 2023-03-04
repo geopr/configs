@@ -1,6 +1,7 @@
 highlight Keywords guifg=#bb9af7
-syntax match Keywords /\v(- )@<=(template|namespace|var|block|yield|async|return|interface|placeholder|if|else|unless|while|do|forEach|forIn|for|include)/
-syntax match Keywords /\v(extends)/
+syntax match Keywords /\v(- )@<=<(template|namespace|var|block|yield|async|return|interface|placeholder|if|else|unless|while|do|forEach|forIn|for|include|attr)>/
+syntax match Keywords /\v(\) )@<=(extends)/
+syntax match Keywords /\v(: |- var )@<=(putIn)/
 
 highlight DynamicUnitName guifg=#f7768e
 syntax match DynamicUnitName /\v(self|this)/
@@ -8,7 +9,7 @@ syntax match DynamicUnitName /\v(- )@<=(super)/
 
 highlight UnitName guifg=#7aa2f7
 syntax match UnitName /\v[a-zA-Z]+(\()@=/
-syntax match UnitName /\v(extends \@)@<=[a-zA-z]+/
+syntax match UnitName /\v(extends \@)@<=[a-zA-Z]+/
 
 highlight String guifg=#9ece6a
 syntax match String /\v(['"`])[^'"`]*\1/
