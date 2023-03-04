@@ -1,7 +1,13 @@
 highlight Keywords guifg=#bb9af7
-syntax match Keywords /\v(- )@<=<(template|namespace|var|block|yield|async|return|interface|placeholder|if|else|unless|while|do|forEach|forIn|for|include|attr|targe|target)>/
+syntax match Keywords /\v(- )@<=<(template|namespace|var|block|yield|async|await|return|interface|placeholder|if|else|unless|while|do|break|continue|forEach|forIn|for|attr|target|series|parallel|waterfall)>/
 syntax match Keywords /\v(\) )@<=<(extends)>/
 syntax match Keywords /\v(: |- (var )?)@<=<(putIn)>/
+syntax match Keywords /\v(- (import|include) .+)@<=<as>/
+syntax match Keywords /\v(- (import|include) .+ as )@<=<(interface|placeholder)>/
+
+highlight Modules guifg=#7dcfff
+syntax match Modules /\v(- )@<=<(include|import)>/
+syntax match Modules /\v(import .+ )@<=from>/
 
 highlight DynamicUnitName guifg=#f7768e
 syntax match DynamicUnitName /\v<(self|this)>/
