@@ -13,7 +13,14 @@ return require('packer').startup(function(use)
   -- remove
   use 'nvim-treesitter/playground'
 
+  -- Syntax highlihting for Stylus files (.styl)
+  use 'wavded/vim-stylus'
+
+  -- Color theme
   use "folke/tokyonight.nvim"
+
+  -- Remove when nvim 0.9 is released (it has builtin support)
+  use 'gpanders/editorconfig.nvim'
 
   -- surrounding manipulatoins (replacing quotes, deleting brackets around words)
   use {

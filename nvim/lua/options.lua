@@ -45,4 +45,3 @@ vim.opt.listchars = {
   space = '⋅',
   tab = '>-',
 }
-
