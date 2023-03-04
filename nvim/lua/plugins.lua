@@ -10,6 +10,9 @@ return require('packer').startup(function(use)
     },
   }
 
+  -- remove
+  use 'nvim-treesitter/playground'
+
   use "folke/tokyonight.nvim"
 
   -- surrounding manipulatoins (replacing quotes, deleting brackets around words)
