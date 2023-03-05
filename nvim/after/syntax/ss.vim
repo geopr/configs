@@ -1,5 +1,5 @@
 highlight Keywords guifg=#bb9af7
-syntax match Keywords /\v(- )@<=<(template|namespace|var|block|yield|async|await|return|interface|placeholder|if|else|unless|while|do|break|continue|forEach|forIn|for|attr|target|series|parallel|waterfall)>/
+syntax match Keywords /\v(- )@<=<(template|namespace|var|block|yield|async|await|return|interface|placeholder|switch|case|if|else|unless|while|do|break|continue|forEach|forIn|for|attr|target|series|parallel|waterfall)>/
 syntax match Keywords /\v(\) )@<=<(extends)>/
 syntax match Keywords /\v(: |- (var )?)@<=<(putIn)>/
 syntax match Keywords /\v(- (import|include) .+)@<=<as>/
