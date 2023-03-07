@@ -56,18 +56,20 @@ lspconfig.lua_ls.setup {
   capabilities = capabilities
 } ]]
 
-lspconfig.rust_analyzer.setup {
+--[[ lspconfig.rust_analyzer.setup {
   capabilities = capabilities
-}
+} ]]
 
 --[[ lspconfig.graphql.setup {
   capabilities = capabilities
 } ]]
 
 -- vuejs
---[[ lspconfig.volar.setup {
+lspconfig.volar.setup {
   capabilities = capabilities
-} ]]
+}
+
+-- lspconfig.vuels.setup {}
 
 --[[ lspconfig.cssls.setup {
   capabilities = capabilities
