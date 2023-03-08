@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
   }
 
   -- remove
-  use 'nvim-treesitter/playground'
+  -- use 'nvim-treesitter/playground'
 
   -- Syntax highlihting for Stylus files (.styl)
   use 'wavded/vim-stylus'

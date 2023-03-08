@@ -26,3 +26,6 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+
+require'vim.treesitter.query'.set_query("typescript", "injections", "(comment) @comment");
+require'vim.treesitter.query'.set_query("javascript", "injections", "(comment) @comment");
