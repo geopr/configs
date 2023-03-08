@@ -1,16 +1,20 @@
 local wezterm = require('wezterm');
 
 return {
-  font = wezterm.font('JetBrains Mono', { weight = 'Regular', italic = false }),
-  font_size = 13.0,
+  font = wezterm.font('JetBrainsMono Nerd Font', { weight = 'Medium', italic = false }),
+  font_size = 15.0,
   harfbuzz_features = {'calt=0', 'clig=0', 'liga=0'},
 
-  color_scheme = "nord",
+  color_scheme = "tokyonight",
 
   window_frame = {
-    font = wezterm.font('JetBrains Mono', { weight = 'Medium', italic = false }),
+    font = wezterm.font('JetBrainsMono Nerd Font', { weight = 'Medium', italic = false }),
     font_size = 10.0,
   },
+
+  enable_tab_bar = false,
+
+  window_decorations = "RESIZE"
 
   -- darcula 
   --[[ colors = {
@@ -30,7 +34,7 @@ return {
   }, ]]
 
   -- nord 
-  colors = {
+  --[[ colors = {
     tab_bar = {
       inactive_tab_edge = 'transparent',
 
@@ -50,6 +54,6 @@ return {
         italic = false,
       },
    },
- },
+ }, ]]
 }
 
