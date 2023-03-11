@@ -20,14 +20,29 @@ lsp.configure('sumneko_lua', {
   },
 }) ]]
 
-local lspconfig = require'lspconfig'
-local capabilities = require'cmp_nvim_lsp'.default_capabilities()
+local utils = require"lsp.utils";
+local config = require"lspconfig";
+local capabilities = require"cmp_nvim_lsp".default_capabilities();
 
-lspconfig.eslint.setup {
+local servers = {
+  eslint        = utils.create_default_server(),
+  clangd        = utils.create_default_server({disabled = true}),
+  rust_analyzer = utils.create_default_server({disabled = true}),
+  graphql       = utils.create_default_server({disabled = true}),
+  volar         = utils.create_default_server({disabled = true}),
+  html          = utils.create_default_server({disabled = true}),
+  css           = utils.create_default_server({disabled = true}),
+  tsserver      = utils.create_default_server(),
+  lua_ls        = utils.create_lua_server(),
+};
+
+utils.setup(servers, config, capabilities);
+
+--[[ lspconfig.eslint.setup {
   capabilities = capabilities
-}
+} ]]
 
-lspconfig.lua_ls.setup {
+--[[ lspconfig.lua_ls.setup {
   capabilities = capabilities,
 
   settings = {
@@ -50,7 +65,7 @@ lspconfig.lua_ls.setup {
       },
     },
   },
-}
+} ]]
 
 --[[ lspconfig.clangd.setup {
   capabilities = capabilities
@@ -65,9 +80,9 @@ lspconfig.lua_ls.setup {
 } ]]
 
 -- vuejs
-lspconfig.volar.setup {
+--[[ lspconfig.volar.setup {
   capabilities = capabilities
-}
+} ]]
 
 -- lspconfig.vuels.setup {}
 
@@ -79,6 +94,6 @@ lspconfig.volar.setup {
   capabilities = client_capabilities
 } ]]
 
-lspconfig.tsserver.setup {
+--[[ lspconfig.tsserver.setup {
   capabilities = capabilities,
-}
+} ]]
