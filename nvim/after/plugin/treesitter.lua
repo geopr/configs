@@ -27,5 +27,5 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
-require'vim.treesitter.query'.set_query("typescript", "injections", "(comment) @comment");
-require'vim.treesitter.query'.set_query("javascript", "injections", "(comment) @comment");
+require'vim.treesitter.query'.set("typescript", "injections", "(comment) @comment");
+require'vim.treesitter.query'.set("javascript", "injections", "(comment) @comment");

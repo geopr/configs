@@ -9,6 +9,7 @@ return require('packer').startup(function(use)
       {'nvim-lua/plenary.nvim'},
     },
   }
+  use 'nvim-treesitter/nvim-treesitter-context'
 
   -- remove
   -- use 'nvim-treesitter/playground'
