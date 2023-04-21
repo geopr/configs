@@ -20,9 +20,6 @@ return require('packer').startup(function(use)
   -- Color theme
   use "folke/tokyonight.nvim"
 
-  -- Remove when nvim 0.9 is released (it has builtin support)
-  use 'gpanders/editorconfig.nvim'
-
   -- surrounding manipulatoins (replacing quotes, deleting brackets around words)
   use {
     "kylechui/nvim-surround",
