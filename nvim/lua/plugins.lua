@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
   use 'wavded/vim-stylus'
 
   -- Color theme
-  use 'folke/tokyonight.nvim'
+  use 'geopr/tokyonight.nvim'
 
   -- surrounding manipulatoins (replacing quotes, deleting brackets around words)
   use {
