@@ -17,7 +17,7 @@ vim.lsp.start_client = function(config)
     local original_on_attach = config.on_attach
 
     config.on_attach = function(client, bufnr)
-      custom_on_attach(client, bufnr)
+      custom_on_attach()
       original_on_attach(client, bufnr)
     end
   end

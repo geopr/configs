@@ -18,22 +18,23 @@ return require('packer').startup(function(use)
   use 'wavded/vim-stylus'
 
   -- Color theme
-  use "folke/tokyonight.nvim"
+  use 'folke/tokyonight.nvim'
 
   -- surrounding manipulatoins (replacing quotes, deleting brackets around words)
   use {
-    "kylechui/nvim-surround",
-    tag = "*",
+    'kylechui/nvim-surround',
+    tag = '*',
   }
 
   -- show opened buffers on top of the current buffer
-  use {
+  --[[ use {
     'akinsho/bufferline.nvim',
 
     requires = {
       {'nvim-tree/nvim-web-devicons'},
     },
-  }
+  } ]]
+  use {'nvim-tree/nvim-web-devicons'}
 
   -- additional information line
   use {
@@ -72,7 +73,7 @@ return require('packer').startup(function(use)
   use 'airblade/vim-gitgutter'
 
   -- prettier formatting
-  use 'prettier/vim-prettier'
+  -- use 'prettier/vim-prettier'
 
   -- commenting/uncommenting lines
   use 'b3nj5m1n/kommentary'
