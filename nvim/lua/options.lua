@@ -40,6 +40,7 @@ vim.o.lazyredraw = true
 vim.o.spelllang = "en_us"
 vim.opt.termguicolors = true
 vim.opt.list = true
+vim.opt.guicursor = "n-v-c-i:block"
 vim.opt.listchars = {
   eol = '↴',
   space = '⋅',
