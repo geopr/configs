@@ -75,10 +75,6 @@ local mappings = {
       l = {':BufferLineCloseRight<cr>', 'Closes all buffers to the right of the current'},
     },
   }, ]]
-  d = {
-    name = 'docs',
-    g = {':DogeGenerate<cr>', 'generates docs (like jsdoc)'},
-  },
 };
 
 local opts = {prefix = '<leader>'}
