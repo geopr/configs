@@ -34,25 +34,16 @@ return require('packer').startup(function(use)
       {'nvim-tree/nvim-web-devicons'},
     },
   } ]]
+
+  -- icons
   use {'nvim-tree/nvim-web-devicons'}
+  use {'kyazdani42/nvim-web-devicons'}
 
   -- additional information line
-  use {
-    'hoob3rt/lualine.nvim',
-
-    requires = {
-      {'kyazdani42/nvim-web-devicons', opt = true},
-    },
-  }
+  use {'hoob3rt/lualine.nvim'}
 
   -- file tree
-  use {
-    'kyazdani42/nvim-tree.lua',
-
-    requires = {
-      {'kyazdani42/nvim-web-devicons'},
-    },
-  }
+  use {'kyazdani42/nvim-tree.lua'}
 
   -- displays a popup with possible key bindings
   use {'folke/which-key.nvim'}
