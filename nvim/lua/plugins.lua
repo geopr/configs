@@ -37,7 +37,6 @@ return require('packer').startup(function(use)
 
   -- icons
   use {'nvim-tree/nvim-web-devicons'}
-  use {'kyazdani42/nvim-web-devicons'}
 
   -- additional information line
   use {'hoob3rt/lualine.nvim'}
