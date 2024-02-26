@@ -106,9 +106,5 @@ cmp.setup({
         latex_symbols = "[Latex]",
       }),
     })
-  },
-
-  experimental = {
-    -- ghost_text = true,
   }
 })

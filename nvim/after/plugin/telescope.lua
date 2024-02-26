@@ -24,8 +24,14 @@ require'telescope'.setup {
         mirror = false
       },
     },
-    find_command = {
-      'rg', '--no-heading', '--with-filename', '--line-number', '--column', '--smart-case'
+    vimgrep_arguments = {
+      'rg',
+      '--no-heading',
+      '--with-filename',
+      '--line-number',
+      '--column',
+      '--smart-case',
+      '--hidden',
     },
     prompt_prefix = " ",
     selection_caret = " ",
