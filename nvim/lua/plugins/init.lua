@@ -1,40 +1,41 @@
 return {
   {
     'nvim-treesitter/nvim-treesitter-context',
-    commit = '63f3ffc50b0afc59be1015153d00922498085be8',
-    lazy = false,
-    pin = true
+    commit = '2bcf700b59bc92850ca83a1c02e86ba832e0fae0',
+    lazy = false
+  },
+
+  {
+    'nvim-lua/plenary.nvim',
+    commit = '2d9b06177a975543726ce5c73fca176cedbffe9d',
+    lazy = false
   },
 
   -- Syntax highlihting for Stylus files (.styl)
   {
     'wavded/vim-stylus',
     commit = '99031823d216c4433fb5c2661a33a43fbebaff61',
-    lazy = false,
-    pin = true
+    lazy = false
   },
 
   -- surrounding manipulatoins (replacing quotes, deleting brackets around words)
   {
     'kylechui/nvim-surround',
-    commit = '10b20ca7d9da1ac8df8339e140ffef94f9ab3b18',
-    lazy = false,
-    pin = true
+    commit = '9f0cb495f25bff32c936062d85046fbda0c43517',
+    lazy = false
   },
 
   -- icons
   {
     'nvim-tree/nvim-web-devicons',
-    commit = '9ab9b0b894b2388a9dbcdee5f00ce72e25d85bf9',
-    lazy = false,
-    pin = true
+    commit = 'd42e68608ba11de8567edb6aeaa0b12bdf627cbc',
+    lazy = false
   },
 
   {
     'hoob3rt/lualine.nvim',
-    commit = '05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9',
+    commit = '2a5bae925481f999263d6f5ed8361baef8df4f83',
     lazy = false,
-    pin = true,
     opts = {
       options = {
         section_separators = '',
@@ -48,9 +49,8 @@ return {
   -- file tree
   {
     'kyazdani42/nvim-tree.lua',
-    commit = '4af572246ce49883e2a52c49203a19984454f2e0',
+    commit = '68fc4c20f5803444277022c681785c5edd11916d',
     lazy = false,
-    pin = true,
     opts = {
       hijack_netrw = true,
       hijack_cursor = true,
@@ -64,25 +64,22 @@ return {
   -- git
   {
     'tpope/vim-fugitive',
-    commit = '43f18ab9155c853a84ded560c6104e6300ad41da',
-    lazy = false,
-    pin = true
+    commit = '174230d6a7f2df94705a7ffd8d5413e27ec10a80',
+    lazy = false
   },
 
   -- mark modified/new/deleted lines with icons
   {
     'airblade/vim-gitgutter',
-    commit = '4a7ca061af2b199a9b97041270611439e8fa2b02',
-    lazy = false,
-    pin = true
+    commit = '7b0b5098e3e57be86bb96cfbf2b8902381eef57c',
+    lazy = false
   },
 
   -- commenting/uncommenting lines
   {
     'b3nj5m1n/kommentary',
-    commit = '3a80117148c6798972bb69414423311ab151d368',
+    commit = 'd5a111a3bc4109a8f913a5863c9092b3b3801482',
     lazy = false,
-    pin = true,
     config = function()
      require('kommentary.config').use_extended_mappings() 
     end
@@ -91,8 +88,7 @@ return {
   {
     'L3MON4D3/LuaSnip',
     commit = 'a658ae2906344a1d2b9c507738e585cf68e685c7',
-    lazy = false,
-    pin = true
+    lazy = false
   },
 }
 

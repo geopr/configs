@@ -2,16 +2,10 @@ return {
   -- tree settier (syntax highlihting)
   {
     'nvim-treesitter/nvim-treesitter',
-    commit = '0b81ed9f18333949a74586a1ea0497ae4cbb7cd4',
+    commit = '6cb4098d51479f644f967c17d4482bab1ba2640f',
     lazy = false,
     pin = true,
-    dependencies = {
-      {
-        'nvim-lua/plenary.nvim',
-        commit = '102c02903c74b93c705406bf362049383abc87c8',
-        pin = true
-      }
-    },
+    dependencies = {'nvim-lua/plenary.nvim'},
     config = function()
       vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
         underline = true,

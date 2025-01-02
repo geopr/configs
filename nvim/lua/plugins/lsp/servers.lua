@@ -10,7 +10,7 @@ local servers = {
   volar         = utils.create_default_server({disabled = true}),
   html          = utils.create_default_server({disabled = true}),
   css           = utils.create_default_server({disabled = true}),
-  tsserver      = utils.create_default_server(),
+  ts_ls         = utils.create_default_server(),
   pylsp         = utils.create_default_server(),
   lua_ls        = utils.create_lua_server(),
 };

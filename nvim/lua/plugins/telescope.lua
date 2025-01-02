@@ -2,16 +2,9 @@ return {
   -- fuzzy finder
   {
     'nvim-telescope/telescope.nvim',
-    commit = '0e0600908d1ad5ac4992fa0ab578e23e9d9d6f37',
+    commit = '2eca9ba22002184ac05eddbe47a7fe2d5a384dfc',
     lazy = false,
-    pin = true,
-    dependencies = {
-      {
-        'nvim-lua/plenary.nvim',
-        commit = '102c02903c74b93c705406bf362049383abc87c8',
-        pin = true
-      }
-    },
+    dependencies = {'nvim-lua/plenary.nvim'},
     config = function()
       local actions = require'telescope.actions';
       local previewers = require'telescope.previewers';
