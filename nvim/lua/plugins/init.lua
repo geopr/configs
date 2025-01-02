@@ -1,7 +1,7 @@
 return {
   {
     'nvim-treesitter/nvim-treesitter-context',
-    commit = '2bcf700b59bc92850ca83a1c02e86ba832e0fae0',
+    commit = 'cfa8ee19ac9bae9b7fb2958eabe2b45b70c56ccb',
     lazy = false
   },
 

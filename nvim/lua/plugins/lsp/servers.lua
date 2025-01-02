@@ -26,7 +26,7 @@ local custom_on_attach = function()
   ]]
 end
 
-local original_start_client = vim.lsp.start_client
+local original_start_client = vim.lsp.start_client;
 
 vim.lsp.start_client = function(config)
   if config.on_attach == nil then

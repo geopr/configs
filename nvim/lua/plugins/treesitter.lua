@@ -7,15 +7,9 @@ return {
     pin = true,
     dependencies = {'nvim-lua/plenary.nvim'},
     config = function()
-      vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-        underline = true,
-        virtual_text = {spacing = 5, severity_limit = 'Warning'},
-        update_in_insert = false
-      })
-
       require'nvim-treesitter.configs'.setup {
         -- A list of parser names, or "all"
-        ensure_installed = {"html", "css", "javascript", "typescript", "lua", "c", "cpp", "rust"},
+        ensure_installed = {"javascript", "typescript", "lua", "markdown", "markdown_inline"},
 
         -- Install parsers synchronously (only applied to `ensure_installed`)
         sync_install = false,
@@ -33,7 +27,7 @@ return {
           -- Using this option may slow down your editor, and you may see some duplicate highlights.
           -- Instead of true it can also be a list of languages
           additional_vim_regex_highlighting = false,
-        },
+        }
       }
 
       require'vim.treesitter.query'.set("typescript", "injections", "(comment) @comment");
