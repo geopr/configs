@@ -1,2 +1,0 @@
-require'helpers/copy_relative_path'
-require'helpers/highlight_occurrences_under_cursor'

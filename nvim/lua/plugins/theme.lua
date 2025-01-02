@@ -1,3 +1,15 @@
+return {
+  -- Color theme
+  {
+    'geopr/tokyonight.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd('colorscheme tokyonight-night')
+    end
+  },
+}
+
 -- for gruvbox theme
 --[[ vim.g.gruvbox_contrast_dark = "medium"
 vim.g.gruvbox_bold = 0
@@ -21,5 +33,3 @@ vim.g.gruvbox_invert_signs = 0 ]]
 --hi EndOfBuffer guibg=NONE ctermbg=NONE
 --hi NonText guibg=NONE ctermbg=NONE
 --]]
-
-vim.cmd('colorscheme tokyonight-night');

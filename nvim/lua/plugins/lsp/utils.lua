@@ -13,7 +13,17 @@ end
 function utils.create_default_server(opts)
   return merge_mut({
     setup = function(capabilities)
-      return {capabilities = capabilities};
+      return {
+        capabilities = capabilities,
+
+        handlers = {
+          ['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+            underline = true,
+            virtual_text = false,
+            update_in_insert = false
+          })
+        }
+      };
     end,
   }, opts);
 end
