@@ -2,7 +2,10 @@ return {
   {
     'nvim-treesitter/nvim-treesitter-context',
     commit = 'cfa8ee19ac9bae9b7fb2958eabe2b45b70c56ccb',
-    lazy = false
+    lazy = false,
+    config = function()
+      require('treesitter-context').setup();
+    end
   },
 
   {
@@ -12,38 +15,49 @@ return {
   },
 
   -- Syntax highlihting for Stylus files (.styl)
-  {
+  --[[ {
     'wavded/vim-stylus',
     commit = '99031823d216c4433fb5c2661a33a43fbebaff61',
-    lazy = false
-  },
+    lazy = false,
+    config = function()
+      require('vim-stylus').setup();
+    end
+  }, ]]
 
   -- surrounding manipulatoins (replacing quotes, deleting brackets around words)
   {
     'kylechui/nvim-surround',
     commit = '9f0cb495f25bff32c936062d85046fbda0c43517',
-    lazy = false
+    lazy = false,
+    config = function()
+      require('nvim-surround').setup();
+    end
   },
 
   -- icons
   {
     'nvim-tree/nvim-web-devicons',
     commit = 'd42e68608ba11de8567edb6aeaa0b12bdf627cbc',
-    lazy = false
+    lazy = false,
+    config = function()
+      require('nvim-web-devicons').setup();
+    end
   },
 
   {
     'hoob3rt/lualine.nvim',
     commit = '2a5bae925481f999263d6f5ed8361baef8df4f83',
     lazy = false,
-    opts = {
-      options = {
-        section_separators = '',
-        component_separators = '',
-        globalstatus = true,
-      },
-      extensions = {'nvim-tree'}
-    }
+    config = function()
+      require('lualine').setup({
+        options = {
+          section_separators = '',
+          component_separators = '',
+          globalstatus = true,
+        },
+        extensions = {'nvim-tree'}
+      });
+    end
   },
 
   -- file tree
@@ -51,14 +65,16 @@ return {
     'kyazdani42/nvim-tree.lua',
     commit = '68fc4c20f5803444277022c681785c5edd11916d',
     lazy = false,
-    opts = {
-      hijack_netrw = true,
-      hijack_cursor = true,
-      view = {
-        width = 40,
-        side = "right",
-      }
-    }
+    config = function()
+      require('nvim-tree').setup({
+        hijack_netrw = true,
+        hijack_cursor = true,
+        view = {
+          width = 40,
+          side = "right",
+        }
+      });
+    end
   },
 
   -- git
@@ -81,7 +97,7 @@ return {
     commit = 'd5a111a3bc4109a8f913a5863c9092b3b3801482',
     lazy = false,
     config = function()
-     require('kommentary.config').use_extended_mappings() 
+     require('kommentary.config').use_extended_mappings();
     end
   },
 

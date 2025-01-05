@@ -6,7 +6,7 @@ return {
     lazy = false,
     pin = true,
     config = function()
-      local wk = require('which-key')
+      local wk = require('which-key');
 
       wk.setup {
         plugins = {
@@ -23,7 +23,7 @@ return {
             g = false
           }
         }
-      }
+      };
 
       local mappings = {
         q = {':q<cr>', 'Quit'},
@@ -74,8 +74,8 @@ return {
         b = {':Telescope buffers<cr>', 'Show current buffers'}
       };
 
-      local opts = {prefix = '<leader>'}
-      wk.register(mappings, opts)
+      local opts = {prefix = '<leader>'};
+      wk.register(mappings, opts);
     end
   },
 }
