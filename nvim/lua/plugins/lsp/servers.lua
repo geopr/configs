@@ -1,21 +1,39 @@
-local utils = require"plugins.lsp.utils";
-local config = require"lspconfig";
-local capabilities = require"cmp_nvim_lsp".default_capabilities();
+--local capabilities = require"cmp_nvim_lsp".default_capabilities();
 
-local servers = {
-  eslint        = utils.create_default_server(),
-  clangd        = utils.create_default_server({disabled = true}),
-  rust_analyzer = utils.create_default_server({disabled = true}),
-  graphql       = utils.create_default_server({disabled = true}),
-  volar         = utils.create_default_server({disabled = true}),
-  html          = utils.create_default_server({disabled = true}),
-  css           = utils.create_default_server({disabled = true}),
-  ts_ls         = utils.create_default_server(),
-  pylsp         = utils.create_default_server(),
-  lua_ls        = utils.create_lua_server(),
+local config = require'lspconfig';
+local capabilities = vim.lsp.protocol.make_client_capabilities();
+capabilities.textDocument.completion.completionItem.snippetSupport = true;
+
+config.cssls.setup {capabilities = capabilities};
+
+config.html.setup {capabilities = capabilities};
+
+config.ts_ls.setup {};
+
+config.eslint.setup {};
+
+config.lua_ls.setup {
+  settings = {
+    Lua = {
+      runtime = {
+        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+        version = 'LuaJIT',
+      },
+      diagnostics = {
+        -- Get the language server to recognize the `vim` global
+        globals = {'vim'},
+      },
+      workspace = {
+        -- Make the server aware of Neovim runtime files
+        library = vim.api.nvim_get_runtime_file("", true),
+      },
+      -- Do not send telemetry data containing a randomized but unique identifier
+      telemetry = {
+        enable = false,
+      }
+    }
+  }
 };
-
-utils.setup(servers, config, capabilities);
 
 -- highlights occurrences under cursor
 -- the function is called when any lsp server attaches to a buffer
