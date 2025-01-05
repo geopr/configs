@@ -22,6 +22,5 @@
   "tokyonight.nvim": { "branch": "main", "commit": "ff81eac0ecf85db235dfc4c9d54f2d07d662a423" },
   "vim-fugitive": { "branch": "master", "commit": "174230d6a7f2df94705a7ffd8d5413e27ec10a80" },
   "vim-gitgutter": { "branch": "main", "commit": "7b0b5098e3e57be86bb96cfbf2b8902381eef57c" },
-  "vim-stylus": { "branch": "master", "commit": "99031823d216c4433fb5c2661a33a43fbebaff61" },
   "which-key.nvim": { "branch": "main", "commit": "d871f2b664afd5aed3dc1d1573bef2fb24ce0484" }
 }
