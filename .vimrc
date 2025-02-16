@@ -1,3 +1,5 @@
+set scrolloff=10
+
 " move selected lines holding Shift + >> and Shift + << without losing selection
 vnoremap > >gv
 vnoremap < <gv
