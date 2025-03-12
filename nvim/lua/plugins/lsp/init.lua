@@ -1,13 +1,13 @@
 return {
   {
     'neovim/nvim-lspconfig',
-    commit = '88dff6268a068403c87b461aee69beb61ceb8303',
+    commit = '8a1529e46eef5efc86c34c8d9bdd313abc2ecba0',
     lazy = false,
 
     dependencies = {
       {
         'hrsh7th/nvim-cmp',
-        commit = 'b356f2c80cb6c5bae2a65d7f9c82dd5c3fdd6038',
+        commit = 'c27370703e798666486e3064b64d59eaf4bdc6d5',
         lazy = false
       },
 
