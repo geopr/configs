@@ -2,7 +2,7 @@ return {
   -- fuzzy finder
   {
     'nvim-telescope/telescope.nvim',
-    commit = '2eca9ba22002184ac05eddbe47a7fe2d5a384dfc',
+    commit = '814f102cd1da3dc78c7d2f20f2ef3ed3cdf0e6e4',
     lazy = false,
     dependencies = {'nvim-lua/plenary.nvim'},
     config = function()

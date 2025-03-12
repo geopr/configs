@@ -1,7 +1,7 @@
 return {
   {
     'nvim-treesitter/nvim-treesitter-context',
-    commit = 'cfa8ee19ac9bae9b7fb2958eabe2b45b70c56ccb',
+    commit = '198720b4016af04c9590f375d714d5bf8afecc1a',
     lazy = false,
     config = function()
       require('treesitter-context').setup();
@@ -10,7 +10,7 @@ return {
 
   {
     'nvim-lua/plenary.nvim',
-    commit = '2d9b06177a975543726ce5c73fca176cedbffe9d',
+    commit = '857c5ac632080dba10aae49dba902ce3abf91b35',
     lazy = false
   },
 
@@ -27,7 +27,7 @@ return {
   -- surrounding manipulatoins (replacing quotes, deleting brackets around words)
   {
     'kylechui/nvim-surround',
-    commit = '9f0cb495f25bff32c936062d85046fbda0c43517',
+    commit = 'ae298105122c87bbe0a36b1ad20b06d417c0433e',
     lazy = false,
     config = function()
       require('nvim-surround').setup();
@@ -37,7 +37,7 @@ return {
   -- icons
   {
     'nvim-tree/nvim-web-devicons',
-    commit = 'd42e68608ba11de8567edb6aeaa0b12bdf627cbc',
+    commit = 'ab4cfee554e501f497bce0856788d43cf2eb93d7',
     lazy = false,
     config = function()
       require('nvim-web-devicons').setup();
@@ -46,7 +46,7 @@ return {
 
   {
     'hoob3rt/lualine.nvim',
-    commit = '2a5bae925481f999263d6f5ed8361baef8df4f83',
+    commit = 'f4f791f67e70d378a754d02da068231d2352e5bc',
     lazy = false,
     config = function()
       require('lualine').setup({
@@ -63,7 +63,7 @@ return {
   -- file tree
   {
     'kyazdani42/nvim-tree.lua',
-    commit = '68fc4c20f5803444277022c681785c5edd11916d',
+    commit = 'c09ff35de503a41fa62465c6b4ae72d96e7a7ce4',
     lazy = false,
     config = function()
       require('nvim-tree').setup({
@@ -80,14 +80,14 @@ return {
   -- git
   {
     'tpope/vim-fugitive',
-    commit = '174230d6a7f2df94705a7ffd8d5413e27ec10a80',
+    commit = '4a745ea72fa93bb15dd077109afbb3d1809383f2',
     lazy = false
   },
 
   -- mark modified/new/deleted lines with icons
   {
     'airblade/vim-gitgutter',
-    commit = '7b0b5098e3e57be86bb96cfbf2b8902381eef57c',
+    commit = '6620e5fbbe6a28de0bfed081f5bd2767023b7eea',
     lazy = false
   },
 

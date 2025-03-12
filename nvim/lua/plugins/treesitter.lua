@@ -2,7 +2,7 @@ return {
   -- tree settier (syntax highlihting)
   {
     'nvim-treesitter/nvim-treesitter',
-    commit = '6cb4098d51479f644f967c17d4482bab1ba2640f',
+    commit = '1a314a58d6d7695d226b56f6b61b1596993d5ac7',
     lazy = false,
     pin = true,
     dependencies = {'nvim-lua/plenary.nvim'},
