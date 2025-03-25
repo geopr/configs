@@ -253,5 +253,9 @@
     "git.blame.editorDecoration.enabled": false,
     "git.blame.statusBarItem.enabled": false,
     "gitlens.currentLine.enabled": false,
-    "gitlens.graph.minimap.enabled": false
+    "gitlens.graph.minimap.enabled": false,
+    "terminal.integrated.automationProfile.osx": {
+        "path": "/bin/zsh"
+    }
 }
+
