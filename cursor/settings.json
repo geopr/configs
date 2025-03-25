@@ -1,0 +1,257 @@
+{
+    "editor.tabSize": 2,
+    "editor.fontSize": 13,
+    "window.zoomLevel": 0.3,
+    "editor.cursorStyle": "block",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.renderWhitespace": "all",
+    "editor.lineNumbers": "relative",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "workbench.settings.editor": "json",
+    "workbench.sideBar.location": "right",
+    "window.newWindowDimensions": "maximized",
+    "search.mode": "newEditor",
+    // "telemetry.telemetryLevel": "off",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "typescript.tsserver.enableRegionDiagnostics": false,
+    "search.followSymlinks": false,
+    "typescript.updateImportsOnPaste.enabled": false,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/*.js.snap": true,
+        "**/desktop.bundles": true,
+        "**/desktop.bundles.widgets": true,
+        "**/dist": true,
+        "**/dumps": true,
+        "**/freeze": true,
+        "**/html_reports": true,
+        "**/html-report": true,
+        "**/styleguide": true,
+        "**/touch.bundles": true,
+        "**/txt_reports": true,
+        "pnpm-lock.yaml": true
+    },
+    "files.exclude": {
+        "**/.git": true
+    },
+    "git.repositoryScanIgnoredFolders": [
+        "node_modules",
+        ".vscode",
+        ".storybook",
+        ".idea",
+        ".envy",
+        ".githooks",
+        ".github",
+        ".git"
+    ],
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "~/.config/.vimrc",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "h"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "d"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "r"
+            ],
+            "commands": [
+                "references-view.findReferences"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "R"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "commands": [
+                "workbench.files.action.focusOpenEditorsView"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "n"
+            ],
+            "commands": [
+                "workbench.action.editor.nextChange"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "N"
+            ],
+            "commands": [
+                "workbench.action.editor.previousChange"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "b"
+            ],
+            "commands": [
+                "gitlens.toggleLineBlame"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "s"
+            ],
+            "commands": [
+                "workbench.view.scm"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "f"
+            ],
+            "commands": [
+                "workbench.files.action.showActiveFileInExplorer"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.splitEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "u"
+            ],
+            "commands": [
+                "git.revertSelectedRanges"
+            ]
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "commands": [
+                "workbench.action.focusPreviousGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "commands": [
+                "workbench.action.focusNextGroup"
+            ]
+        },
+        {
+            "before": [
+                "<Esc>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        }
+    ],
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.configPath": ".prettierrc.js",
+    "prettier.requireConfig": true,
+    "chat.commandCenter.enabled": false,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.hover.delay": 1500,
+    "editor.minimap.enabled": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.renderLineHighlight": "none",
+    "security.workspace.trust.enabled": true,
+    "workbench.editor.enablePreview": false,
+    "window.openFilesInNewWindow": "on",
+
+    "git.blame.editorDecoration.enabled": false,
+    "git.blame.statusBarItem.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.graph.minimap.enabled": false
+}
