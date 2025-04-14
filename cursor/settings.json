@@ -3,6 +3,7 @@
     "editor.fontSize": 13,
     "window.zoomLevel": 0.3,
     "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "solid",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.renderWhitespace": "all",
     "editor.lineNumbers": "relative",
@@ -49,6 +50,7 @@
         ".github",
         ".git"
     ],
+    "git.pullTags": false,
     "vim.leader": "<space>",
     "vim.easymotion": true,
     "vim.incsearch": true,
@@ -256,6 +258,8 @@
     "gitlens.graph.minimap.enabled": false,
     "terminal.integrated.automationProfile.osx": {
         "path": "/bin/zsh"
-    }
+    },
+    "gitlens.graph.layout": "editor",
+    "git.allowForcePush": true,
 }
 
