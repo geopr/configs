@@ -253,7 +253,7 @@
     "window.openFilesInNewWindow": "on",
 
     "git.blame.editorDecoration.enabled": false,
-    "git.blame.statusBarItem.enabled": false,
+    "git.blame.statusBarItem.enabled": true,
     "gitlens.currentLine.enabled": false,
     "gitlens.graph.minimap.enabled": false,
     "terminal.integrated.automationProfile.osx": {
