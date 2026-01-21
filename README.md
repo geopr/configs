@@ -1,3 +1,4 @@
+* defaults read -g + Karabiner Elements
 * [alacritty](https://github.com/alacritty/alacritty)
 * [tmux](https://github.com/tmux/tmux/wiki)
 * [nvim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
