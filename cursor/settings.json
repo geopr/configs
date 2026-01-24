@@ -1,7 +1,7 @@
 {
     "editor.tabSize": 2,
     "editor.fontSize": 13,
-    "window.zoomLevel": 0.3,
+    "window.zoomLevel": 0,
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
@@ -57,9 +57,6 @@
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
-    "extensions.experimental.affinity": {
-        "vscodevim.vim": 1
-    },
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "~/.config/.vimrc",
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -251,7 +248,6 @@
     "security.workspace.trust.enabled": true,
     "workbench.editor.enablePreview": false,
     "window.openFilesInNewWindow": "on",
-
     "git.blame.editorDecoration.enabled": false,
     "git.blame.statusBarItem.enabled": true,
     "gitlens.currentLine.enabled": false,
@@ -261,5 +257,7 @@
     },
     "gitlens.graph.layout": "editor",
     "git.allowForcePush": true,
+    "editor.accessibilitySupport": "off",
+    "git.ignoreRebaseWarning": true,
+    "cursor.inlineDiff.mode": "unified",
 }
-
